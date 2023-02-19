@@ -37,7 +37,7 @@ const Section: React.FC<
   const [name,setName] = React.useState("Moshood Oseni")
   return (
     <View style={styles.sectionContainer}>
-      <TextInput value='My Name'/>
+      <TextInput value='This text is for feature one'/>
       <Text
         style={[
           styles.sectionTitle,
@@ -54,7 +54,7 @@ const Section: React.FC<
             color: isDarkMode ? Colors.light : Colors.dark,
           },
         ]}>
-         Welcome to the CD/CD course {name}
+         Welcome to the CD/CD course! Lets begin {name}
       </Text>
     </View>
   );
