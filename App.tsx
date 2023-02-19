@@ -34,6 +34,7 @@ const Section: React.FC<
   }>
 > = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
+  const [name,setName] = React.useState("Moshood Oseni")
   return (
     <View style={styles.sectionContainer}>
       <TextInput value='My Name'/>
@@ -53,7 +54,7 @@ const Section: React.FC<
             color: isDarkMode ? Colors.light : Colors.dark,
           },
         ]}>
-         Welcome to the CD/CD course
+         Welcome to the CD/CD course {name}
       </Text>
     </View>
   );
